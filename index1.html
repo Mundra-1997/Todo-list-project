@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalizer@1.1.0/modern-normalize.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <main class="app">
+    <section class="greeting">
+        <h2 class="title">
+            what's up, <input type="text" id="name" placeholder="Name here">
+        </h2>
+    </section>
+    <section class="create-todo">
+        <h3>Create a task</h3>
+        <form id="new-todo-form">
+            <h4>What's on your todo list?</h4>
+            <input type="text" name="content" id="content" placeholder="e.g buy groceries">
+            <h4>pick a category</h4>
+            <div class="option">
+                <label>
+                    <input type="radio" name="category" id="category1" value="work">
+                    <span class="bubble work"></span>
+                    <div>Work</div>
+                </label>
+                 <label>
+                    <input type="radio" name="category" id="category2" value="personal">
+                    <span class="bubble personal"></span>
+                    <div>Personal</div>
+                </label>
+            </div>
+            <input type="submit" value="Add Task">
+        </form>
+    </section>
+    <section class="todo-list">
+        <h3>TODO LIST</h3>
+        <div class="list" id="todo-list">
+            <div class="todo-item">
+                <label>
+                    <input type="checkbox">
+                    <span class="bubble work"></span>
+                </label>
+                <div class="todo-content">
+                    <input type="text" readonly>
+                </div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="index1.js"></script>
+</body>
+</html>
